@@ -36,3 +36,6 @@ There are 4 drawing functions:
 "down" is used to move down a line (This is needed if you are drawing on an image with a height more than 1)
 "colour(" is used to change a colour (You must use a hex value without # such as "colour(FF0000" which would be red)
 and "random(" sets the colour to a random colour
+
+<h2>Writing but easier for me to code</h2>
+"binary(" and then your binary text without spaces or it wont work (it makes a line of pixels with white being 1 and black meaning 0)

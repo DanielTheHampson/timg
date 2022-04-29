@@ -25,16 +25,24 @@ The file name for this one is "randomLine.timg" and it produces four lines of a 
 
 <h2>File Set up</h2>
 At the beginning of the file you will need to type 3 lines.
+<br>
 Those lines are:
+<br>
 "width(" then your wanted width
+<br>
 "height(" then your wanted height
+<br>
 and "setupDone" to complete the set up
 
 <h2>COLOURS!!!</h2>
 There are 4 drawing functions:
+<br>
 "line(" and then your length (Draws a line of your wanted length)
+<br>
 "down" is used to move down a line (This is needed if you are drawing on an image with a height more than 1)
+<br>
 "colour(" is used to change a colour (You must use a hex value without # such as "colour(FF0000" which would be red)
+<br>
 and "random(" sets the colour to a random colour
 
 <h2>Writing but easier for me to code</h2>

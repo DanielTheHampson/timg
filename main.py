@@ -25,7 +25,6 @@ for line in file:
         pixels = img.load()
         print("image setup done")
 
-
     if line.__contains__("colour("):
         h = line[7:]
         currentCol = tuple(int(h[i:i+2], 16) for i in (0, 2, 4))
@@ -53,6 +52,23 @@ for line in file:
         currentX = -1
         print("current y now " + str(currentY))
 
+    if line.__contains__("binary("):
+        binary = line[7:]
+
+        if currentX < int(width) - 1:
+            currentX += 1
+        else:
+            currentX = -1
+
+        for char in binary:
+            if char == "0":
+                pixels[currentX, currentY] = (0, 0, 0)
+                currentX += 1
+            if char == "1":
+                pixels[currentX, currentY] = (255, 255, 255)
+                currentX += 1
 
     if line.__contains__("done"):
         img.save("out.png")
+
+input("Press Enter to Exit...")

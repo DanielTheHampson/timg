@@ -47,3 +47,12 @@ and "random(" sets the colour to a random colour
 
 <h2>Writing but easier for me to code</h2>
 "binary(" and then your binary text without spaces or it wont work (it makes a line of pixels with white being 1 and black meaning 0)
+
+<h2>Converting a PNG or JPEG file to TIMGM</h2>
+1. Run pngToTimg.py
+<br>
+2. Type your filename (360x360.jpg, balls.png etc.)
+<br>
+3. Wait until it's done
+<br>
+4. The output file will be named "[Original filename.jpg].timg"
